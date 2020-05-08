@@ -71,7 +71,7 @@ public class Agencia {
     }
     public synchronized Marcacao MarcarViagem (Viagem Viagem, Cliente Cliente,  LocalDate Hora) {
         if (Lista_viagens.contains(Viagem)){
-            System.out.println("Não exista Viagem");
+            System.out.println("Não existe Viagem");
         }
 
         else if (Lista_clientes.contains(Cliente)){
