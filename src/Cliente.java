@@ -4,9 +4,9 @@ public class Cliente {
     private String Telemovel;
 
     public Cliente(int id_cliente, String nome, String telemovel) {
-        Id_cliente = id_cliente;
-        Nome = nome;
-        Telemovel = telemovel;
+        this.Id_cliente = id_cliente;
+        this.Nome = nome;
+        this.Telemovel = telemovel;
     }
 
     public int getId_cliente() {

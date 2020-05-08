@@ -6,11 +6,11 @@ public class Viagem {
     private LocalDate Data;
 
     public Viagem(int id_viagem, int preco, String origem, String destino, LocalDate data) {
-        Id_viagem = id_viagem;
-        Preco = preco;
-        Origem = origem;
-        Destino = destino;
-        Data = data;
+        this.Id_viagem = id_viagem;
+        this.Preco = preco;
+        this.Origem = origem;
+        this.Destino = destino;
+        this.Data = data;
     }
 
     public int getId_viagem() {
