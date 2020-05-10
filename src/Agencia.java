@@ -1,9 +1,10 @@
 import java.time.LocalDate;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 
 public class Agencia {
     private static volatile Agencia instance;
-    private ArrayList<Cliente> Lista_clientes = new ArrayList<>();
+    private static ArrayDeque<Object> Lista_clientes;
     private ArrayList<Viagem> Lista_viagens = new ArrayList<>();
     private ArrayList<Marcacao> Lista_marcacoes = new ArrayList<>();
     private String Nome;
@@ -62,7 +63,7 @@ public class Agencia {
     public void setTelemovel(String telemovel) {
         Telemovel = telemovel;
     }
-    public synchronized void RegistarCliente (Cliente Cliente) {
+    public static synchronized void RegistarCliente(Cliente Cliente) {
         if (Lista_clientes.contains(Cliente)) {
             System.out.println("Utilizador com registo");
         } else {
