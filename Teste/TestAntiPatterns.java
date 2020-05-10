@@ -59,7 +59,6 @@ public class TestAntiPatterns {
 
     }
 
-
     @Test
     public void VerificaViagem(){
         agencia = new Agencia("ViagensTradicionais","Lisboa", "243556765");
