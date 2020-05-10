@@ -16,21 +16,21 @@ public class TestAntiPatterns {
     static void initialize() {
     }
 
-
+    //the liar
     @Test
     public void RegistoCliente() {
         cliente = new Cliente(1, "Luis", "968066043");
         Agencia.RegistarCliente(cliente);
     }
 
-
+    //happy-path
     @Test
     public void testViagem() {
         viagem.setId_viagem(3);
         assertEquals(3, viagem.getId_viagem());
     }
 
-
+    //dodger
     @Test
     public void NomeCliente() {
         cliente = new Cliente(4, "Laura", "913344565");
@@ -38,7 +38,8 @@ public class TestAntiPatterns {
         assertEquals("Laurita", cliente.getNome());
     }
 
-
+    //anal probe
+    //Enumerator
     @Test
     void VerificarvariavelAgencia() {
         Agencia privateObject = new Agencia("BoasViagens", "Viseu", "232456378");
@@ -59,6 +60,7 @@ public class TestAntiPatterns {
 
     }
 
+    //secret
     @Test
     public void VerificaViagem(){
         agencia = new Agencia("ViagensTradicionais","Lisboa", "243556765");
